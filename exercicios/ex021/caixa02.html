@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blueviolet;
+            margin: 0%;
+        }
+
+        header{
+            color: white;
+            background-color: #2d0255;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 3px;
+        } 
+
+        nav{
+            background-color: yellow;
+            padding: 5px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.596);
+            border-radius: 15px;
+        }
+
+        nav>a{
+            text-decoration: none;
+            color:#8d3cd8;
+            font-weight: bold;
+            margin-right: 25px;
+            margin-left: 15px;
+            
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            
+        }
+        main{
+            color: white;
+            background-color: rgb(160, 113, 204);
+            padding: 10px;
+            margin: 20px;
+            border-radius: 0px 10px 10px 10px;
+        }
+
+        article> aside{
+            background-color: #8d3cd8;
+        }
+
+        footer{
+            background-color: #2d0255;
+            color: yellow;
+            text-align: center;
+        
+        }
+
+    </style>
+</head>
+<body>
+   <header>
+      <h1>MEU SITE</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+   </header>
+   <main>
+    <section id="assuntos">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quas omnis provident reprehenderit minima facere quam consectetur, sit eius consequuntur nihil sequi et mollitia, at nulla, veniam aliquid itaque? Aliquam!</p>
+
+    </section>
+    <section id="noticias">
+        <article>
+            <h2>Notícias sobre o brasil</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, laudantium sint exercitationem dolores voluptatem iste harum tempora laboriosam. Qui, laudantium! Assumenda quis at beatae facilis ducimus sapiente eligendi molestiae provident?</p>
+            <aside>
+                <p>Artigo escrito por Lucas Emanuel</p>
+            </aside>
+        </article>
+    </section>
+   </main>
+   <footer>
+    Desenvolvido por manu
+
+   </footer>
+</body>
+</html>
