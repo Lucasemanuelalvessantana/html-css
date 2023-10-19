@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundos</title>
+    <style>
+        body{
+            background-color: rgb(207, 124, 124);
+            font: 13pt arial;
+            color: black;
+        }
+
+        div{
+            width: 90%;
+            height: 400px;
+            background-color: lightslategray;
+            border: 1px solid black;
+        }
+
+        div#area001{
+            background-image: url(pattern002.png);
+            background-repeat: repeat;
+        }
+
+        div#area002{
+            background-image: url(pattern002.png);
+            background-repeat: no-repeat;
+        }
+
+        div#area003{
+            background-image: url(pattern003.png);
+            background-repeat: repeat-x;
+        }
+
+        div#area004{
+            background-image: url(pattern004.png);
+            background-repeat: repeat-y;
+        }
+    </style>
+</head>
+<body>
+    <h1>Repetições em backgroud-image</h1>
+    <h2>backgroud-repeat: repeat</h2>
+    <p>Repete a imagem no sentido vertical e horizontal</p>
+    <div id="area001"> </div>
+    <h2>backgroud-repeat: no-repeat</h2>
+    <p>Não repete a imagem em nenhum eixo, A imagem só é carregada uma única vez.</p>
+    <div id="area002"></div>
+    <h2>backgroud-repeat: repeat-x</h2>
+    <p>Repete a imagem apenas de forma horizontal</p>
+    <div id="area003"></div>
+    <h2>backgroud-repeat: repeat-y</h2>
+    <p>Repete a imagem no sentido vertical</p>
+    <div id="area004"></div>
+</body>
+</html>
