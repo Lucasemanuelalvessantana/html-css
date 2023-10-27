@@ -20,6 +20,7 @@
             margin: auto;
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead, tfoot th{
@@ -34,6 +35,17 @@
         td.num{
             text-align: right;
         }
+
+        thead>tr>th{
+            position: sticky;
+            top:-1px;
+            background-color: gray;
+        }
+
+        tbody>tr:nth-child(2n){
+            background-color: white;
+        }
+        
     </style>
 </head>
 <body>
@@ -41,6 +53,7 @@
     <!-- 
         ANATOMIAS PARA TABELAS GRANDES
         TABLE
+            caption
             THEAR
                 TR, TD, TH
             TBODY
@@ -49,10 +62,11 @@
                 TR,TD,TH
      -->
      <Table>
+        <caption>População das unidades federativas do Brasil</caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÂO</th>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 125px;">POPULAÇÂO</th>
             </tr>
         </thead>
         <tbody>
@@ -167,8 +181,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>POPULAÇÂO GERAL</th>
-                <td class="num">203.589 milhões</td>
+                <th scope="row">POPULAÇÂO GERAL</th>
+                <td class="num"><strong>203.589 milhões</strong></td>
             </tr>
         </tfoot>
      </Table>
