@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicos de tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 490px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .amarelo{
+            background-color: yellow;
+        }
+
+        .vermelho{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <Table>
+        <colgroup>
+            <!-- usar a tag span e a quantidade de colunas quando quiser a mesma configuração para mais de uma coluna -->
+            <col class="amarelo" >
+            <col class="vermelho">
+        </colgroup>
+        <caption>População das unidades federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">ESTADO</th>
+                <th scope="col" style="width: 125px;">POPULAÇÂO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">44,04 milhões</td>
+            </tr>
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">20,87 milhões</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">16,46 milhões</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.13 milhões</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.44 milhões</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.88 milhões</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.05 milhões</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8.79 milhões</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.11 milhões</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.60 milhões</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.05 milhões</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.05 milhões</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3.97 milhões</td>
+            </tr>
+            <tr>
+                <td>Amazinas</td>
+                <td class="num">3.94 milhões</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.83 milhões</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.65 milhões</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.30 milhões</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.26 milhões</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.12 milhões</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.81 milhões</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.75 milhões</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.20 milhões</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.58 milhões</td>
+            </tr>
+            <tr>
+                <td>Tocantis</td>
+                <td class="num">1.51 milhões</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">830 mil</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">733 mil</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">636 mil</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">POPULAÇÂO GERAL</th>
+                <td class="num"><strong>203.589 milhões</strong></td>
+            </tr>
+        </tfoot>
+     </Table>
+</body>
+</html>

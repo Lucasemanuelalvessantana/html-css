@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        div#container{
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas responsivas </h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos iste voluptatem maiores omnis est, dignissimos corrupti, molestias libero, vero reiciendis consequatur nobis quos in magni consectetur quia? Voluptate, illo eos.</p>
+    <div id="container">
+        <table>
+            <caption>
+                FILMES FAVORITOS
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupos</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Maria Ana</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Claudia Melo</td>
+                    <td>Ablivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Lucas Emanuel</td>
+                    <td>INtocavéis</td>
+                    <td>Amnésia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Emanuel Santana</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Nicholas Henrique</td>
+                    <td>Star Wars</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
